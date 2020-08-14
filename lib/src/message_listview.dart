@@ -262,45 +262,33 @@ class _MessageListViewState extends State<MessageListView> {
                                                         widget.user.uid
                                                     ? AlignmentDirectional.centerEnd
                                                     : AlignmentDirectional.centerStart,
-                                            child: Bubble(
-                                              elevation: 0,
-                                              alignment: widget.messages[i].user.uid ==
-                                                        widget.user.uid
-                                                        ? Alignment.topRight
-                                                        : Alignment.topLeft,
-                                              nip: widget.messages[i].user.uid ==
-                                                        widget.user.uid
-                                                        ? BubbleNip.rightBottom
-                                                        : BubbleNip.leftBottom,
-                                              color: Color.fromARGB(255, 225, 255, 199),
-                                              child: MessageContainer(
-                                                messagePadding:
-                                                    widget.messagePadding,
-                                                constraints: constraints,
-                                                isUser:
-                                                    widget.messages[i].user.uid ==
-                                                        widget.user.uid,
-                                                message: widget.messages[i],
-                                                timeFormat: widget.timeFormat,
-                                                messageImageBuilder:
-                                                    widget.messageImageBuilder,
-                                                messageTextBuilder:
-                                                    widget.messageTextBuilder,
-                                                messageTimeBuilder:
-                                                    widget.messageTimeBuilder,
-                                                messageContainerDecoration: widget
-                                                    .messageContainerDecoration,
-                                                parsePatterns:
-                                                    widget.parsePatterns,
-                                                buttons:
-                                                    widget.messages[i].buttons,
-                                                messageButtonsBuilder:
-                                                    widget.messageButtonsBuilder,
-                                                textBeforeImage:
-                                                    widget.textBeforeImage,
-                                                messageDecorationBuilder:
-                                                    widget.messageDecorationBuilder,
-                                              ),
+                                            child: MessageContainer(
+                                              messagePadding:
+                                                  widget.messagePadding,
+                                              constraints: constraints,
+                                              isUser:
+                                                  widget.messages[i].user.uid ==
+                                                      widget.user.uid,
+                                              message: widget.messages[i],
+                                              timeFormat: widget.timeFormat,
+                                              messageImageBuilder:
+                                                  widget.messageImageBuilder,
+                                              messageTextBuilder:
+                                                  widget.messageTextBuilder,
+                                              messageTimeBuilder:
+                                                  widget.messageTimeBuilder,
+                                              messageContainerDecoration: widget
+                                                  .messageContainerDecoration,
+                                              parsePatterns:
+                                                  widget.parsePatterns,
+                                              buttons:
+                                                  widget.messages[i].buttons,
+                                              messageButtonsBuilder:
+                                                  widget.messageButtonsBuilder,
+                                              textBeforeImage:
+                                                  widget.textBeforeImage,
+                                              messageDecorationBuilder:
+                                                  widget.messageDecorationBuilder,
                                             ),
                                           ),
                                   ),

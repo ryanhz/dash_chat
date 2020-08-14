@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  bubble: ^1.1.9+1
   flutter_parsed_text: ^1.1.0
   uuid: ^2.0.1
   intl: ^0.16.0
